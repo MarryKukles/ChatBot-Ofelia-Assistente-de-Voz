@@ -23,8 +23,8 @@
 - [SpeechRecognition](https://pypi.org/project/SpeechRecognition/) → Reconhecimento de voz.  
 - [gTTS](https://pypi.org/project/gTTS/) → Síntese de voz.  
 - [playsound](https://pypi.org/project/playsound/) → Reprodução de áudio.  
-- **Winsound** (para beep em Windows).  
-- **Threading** → Para execução paralela do beep.  
+- [Winsound](https://docs.python.org/3/library/winsound.html) → Para beep em Windows.  
+- [Threading](https://docs.python.org/3/library/threading.html) → Para execução paralela do beep.  
 
 ---
 
