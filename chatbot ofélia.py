@@ -42,7 +42,7 @@ class ChatbotVoz:
         print(f"[ASSISTENTE] {texto}")
 
         try:
-            # Cria o arquivo de áudio temporário
+            # Áudio temporário
             tts = gTTS(text=texto, lang='pt-br', slow=False)
             temp_file = "temp_response.mp3"
             tts.save(temp_file)
@@ -77,7 +77,7 @@ class ChatbotVoz:
         if not comando:
             return None
 
-        # Verifica se o comando é de despedida
+        # Verificação do comando de despedida
         if "adeus" in comando or "sair" in comando or "tchau" in comando:
             self.ativo = False
             return self.respostas["adeus"]
@@ -107,7 +107,7 @@ class ChatbotVoz:
 
 if __name__ == "__main__":
     try:
-        # Instale as dependências necessárias
+        # Dependências necessárias
         import importlib.util
 
         if not importlib.util.find_spec('gtts'):
